@@ -1,13 +1,12 @@
 #include <iostream>
-
 // The `extern` keyword tells the compiler that the count function exists,
 // but will be implemented somewhere else
-extern int array_sum(int[], int);
+extern int count_evens(int);
 
-int main() {
-    // array
-    int array[5] = {4,5,6,7,8};
+int main(){
+
     //prints the anwser
-    std::cout << "The sum is: " << array_sum(array, 5) << std::endl;
+    std::cout << "The number is: " << count_evens(4) << std::endl;
+
     return 0;
 }
