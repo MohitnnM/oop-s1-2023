@@ -1,10 +1,9 @@
 #include <iostream>
 #include <cmath>
-void transform(int N, int base){
+int transform(int N, int base){
     int quotient = N;
     int remainder[10] = {};
     int count = 0;
-
     while (quotient !=0){
         int division = quotient / base;
         if (quotient % base != 0){
