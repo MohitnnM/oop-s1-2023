@@ -2,6 +2,7 @@
 
 void count_digits(int array[4][4]) {
   // intialising variables
+  int zeros = 0;
   int ones = 0;
   int twos = 0;
   int threes = 0;
@@ -17,6 +18,9 @@ void count_digits(int array[4][4]) {
     for (int j = 0; j < 4; j++) {
       // switch statement to increase count of number 1-9 if found in array
       switch (array[i][j]) {
+        case 0:
+          zeros += 1;
+          break;
         case 1:
           ones += 1;
           break;
@@ -49,7 +53,8 @@ void count_digits(int array[4][4]) {
   }
 
   // print results
-  std::cout << "1:" << ones << "; "
+  std::cout << "0:" << zeros << "; "
+            << "1:" << ones << "; "
             << "2:" << twos << "; "
             << "3:" << threes << "; "
             << "4:" << fours << "; "
