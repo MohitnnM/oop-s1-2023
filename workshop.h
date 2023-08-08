@@ -3,8 +3,6 @@ using namespace std;
 
 void changeValue(double * p_num){
     *p_num = 42;
-
-    cout << *p_num;
 }
 
 void printArray(double * pArray, int arraySize){
