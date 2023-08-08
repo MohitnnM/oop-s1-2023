@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void changeValues(double * p_num){
+void changeValue(double * p_num){
     *p_num = 42;
 
     cout << *p_num << endl;
@@ -25,4 +25,14 @@ double arrayMax(double * pArray ,int arraySize){
     }
 
     return max;
+}
+
+double * dynamicArray(int N, double M){
+    double * newArray = new double[N]; 
+
+    for (int i = 0; i < N; i++){
+        newArray[i] = M; 
+    }
+
+    return(newArray);
 }

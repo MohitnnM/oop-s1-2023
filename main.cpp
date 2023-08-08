@@ -1,6 +1,4 @@
 #include <iostream>
-
-#include "other.h"
 #include "workshop.h"
 using namespace std;
 
@@ -9,7 +7,7 @@ int main() {
   double num = 1;
   double* p_num = &num;
   // running function
-  changeValues(p_num);
+  changeValue(p_num);
 
   // variable for part 3
   double array[] = {3, 5, 2};
