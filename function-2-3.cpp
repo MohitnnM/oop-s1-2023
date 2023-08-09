@@ -16,18 +16,20 @@ int sum_integers(int integers[], int length){
 
 bool is_palindrome(int integers[], int length){
 
-    int palindrome_true_false = 0;
+    int palindrome_true_false = 1;
+    int count = 0;
 
     for (int i = 0; i < length/2; i++){
-        if (integers[i] = integers[length-i-1]){
-            palindrome_true_false = 1;
-        }
-        else {
-            return -2;
+        if (integers[i] != integers[length-i-1]){
+            return(false);
+
         }
     }
-
-    return(palindrome_true_false);
+    if (palindrome_true_false == 1){
+        return(true);
+    } else{
+        return(-2);
+    }
 }
 
 int palindrome_sum(int integers[], int length){
