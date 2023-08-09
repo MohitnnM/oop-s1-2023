@@ -17,7 +17,6 @@ int sum_integers(int integers[], int length){
 bool is_palindrome(int integers[], int length){
 
     int palindrome_true_false = 1;
-    int count = 0;
 
     for (int i = 0; i < length/2; i++){
         if (integers[i] != integers[length-i-1]){
