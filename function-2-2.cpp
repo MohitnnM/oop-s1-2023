@@ -8,7 +8,6 @@ int bin_to_int(int binary_digits[], int number_of_digits){
 
     for (int i = 0; i < number_of_digits; i++){
         sum += binary_digits[i]*pow(2,count);
-        cout<<sum<<endl;
         count--;
     }
 
