@@ -1,5 +1,6 @@
 #include "Musician.h"
 #include <iostream>
+using namespace std;
 
 Musician::Musician(string m_instrument, int m_experience) {
   instrument = m_instrument;
