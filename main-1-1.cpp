@@ -8,6 +8,6 @@ int main(){
     int bed = 4;
     int price = 1000;
     double size = 25;
-    cout << "second unit: " << u2.get_num_bedrooms(bed) << " " << u2.get_value(price) << " " << u2.get_area(size) <<  endl;
+    cout << "second unit: " << u2.get_Num_Bedrooms(bed) << " " << u2.get_Value(price) << " " << u2.get_Area(size) <<  endl;
 
 }
