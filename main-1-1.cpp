@@ -5,9 +5,7 @@ using namespace std;
 
 int main(){
     Unit u2;
-    int bed = 4;
-    int price = 1000;
-    double size = 25;
-    cout << "second unit: " << u2.get_Num_Bedrooms(bed) << " " << u2.get_Value(price) << " " << u2.get_Area(size) <<  endl;
+    
+    cout << "second unit: " << u2.get_Num_Bedrooms(1) << " " << u2.get_Value(1) << " " << u2.get_Area(2) <<  endl;
 
 }
