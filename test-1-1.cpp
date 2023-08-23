@@ -6,7 +6,7 @@ extern void printNumbers(int*,int);
 
 int main(){
     int length = 10;
-    int array[] = {readNumbers()}; 
+    int* array = readNumbers(); 
     printNumbers(array,length);
 
 
