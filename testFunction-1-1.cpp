@@ -14,7 +14,7 @@ int* readNumbers(){
 void printNumbers(int *numbers, int length){
     if (length > 0){
         for (int i = 0; i < length; i++){
-            cout << i << numbers[i] << endl;
+            cout << i << " " << numbers[i] << endl;
         }
     }
 }
