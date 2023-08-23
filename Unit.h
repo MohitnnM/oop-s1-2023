@@ -14,7 +14,7 @@ class Unit {
     unit_size = 0;
   }
   Unit(int, int, double);
-  int get_num_beds(int);
-  int get_value(int);
-  double get_area(double);
+  int get_Num_Bedrooms(int);
+  int get_Value(int);
+  double get_Area(double);
 };
