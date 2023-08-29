@@ -12,7 +12,7 @@ class Warrior: public Player {
     Warrior(string name, int health, int damage, string weapon);
     string getName();
     int getHealth();
-    string swingWeapon(Wizard*);
+    string swingWeapon(Player*);
     void castSpell(Player* opponent);    
 };
 #endif
