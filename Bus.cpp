@@ -11,6 +11,6 @@ Bus::Bus(int ID): Vehicle(ID) {}
 
 int Bus::getParkingDuration(){
     time_t presentTime = time(nullptr);
-    int timeDiff = difftime(presentTime,timeOfEntry) * 0.75;
-    return timeDiff;
+    int timeDiff = difftime(presentTime,timeOfEntry);
+    return timeDiff*0.75;
 }

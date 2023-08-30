@@ -6,7 +6,6 @@
 using namespace std;
 
 int main() {
-    time_t time;
     Vehicle* vehicleArray = new Vehicle[3];
     Car c(1);
     Bus b(2);

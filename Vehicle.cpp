@@ -1,12 +1,11 @@
 #include <iostream>
-#include <ctime>
+#include <time.h>
 #include "Vehicle.h"
 using namespace std;
 
 Vehicle::Vehicle(): Vehicle(0) {}
 
-Vehicle::Vehicle(int ID){
-    this->ID = ID;
+Vehicle::Vehicle(int ID): ID(ID){
     timeOfEntry = time(nullptr);
 }
 
