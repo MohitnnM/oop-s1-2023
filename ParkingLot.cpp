@@ -11,9 +11,9 @@ int ParkingLot::getCount(){
 }
 
 int ParkingLot::parkVehicle(){
-
+    return 0;
 }
 
-int ParkingLot::parkVehicle(){
-    
+int ParkingLot::unparkVehicle(){
+    return 0;
 }
