@@ -5,14 +5,15 @@
 
 class ParkingLot{
     private:
-        Vehicle* vehicles = new Vehicle[5];
+        Vehicle** vehicles;
         int maxCapacity;
         int vehicleCount;
     public:
         ParkingLot();
-        ParkingLot(int vehicleCount);
+        ParkingLot(int capacity);
         int getCount();
-        int parkVehicle(Vehicle*&);
+        int parkVehicle(Vehicle* vehicle);
         int unparkVehicle(int ID);
+        
 };
 #endif
