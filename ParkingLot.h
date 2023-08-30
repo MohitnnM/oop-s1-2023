@@ -10,7 +10,7 @@ class ParkingLot{
         int vehicleCount;
     public:
         ParkingLot();
-        ParkingLot(Vehicle* vehicles);
+        ParkingLot(int vehicleCount);
         int getCount();
 };
 #endif

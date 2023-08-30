@@ -4,7 +4,7 @@
 
 ParkingLot::ParkingLot() {}
 
-ParkingLot::ParkingLot(Vehicle* vehicles){}
+ParkingLot::ParkingLot(int vehicleCount){}
 
 int ParkingLot::getCount(){
     return vehicleCount;
