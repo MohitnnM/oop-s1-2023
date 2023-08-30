@@ -9,3 +9,11 @@ ParkingLot::ParkingLot(int vehicleCount){}
 int ParkingLot::getCount(){
     return vehicleCount;
 }
+
+int ParkingLot::parkVehicle(){
+
+}
+
+int ParkingLot::parkVehicle(){
+    
+}
