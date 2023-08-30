@@ -12,7 +12,7 @@ class ParkingLot{
         ParkingLot();
         ParkingLot(int vehicleCount);
         int getCount();
-        int parkVehicle();
-        int unparkVehicle();
+        int parkVehicle(Vehicle*&);
+        int unparkVehicle(int ID);
 };
 #endif
