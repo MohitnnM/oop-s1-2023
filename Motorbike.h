@@ -2,9 +2,9 @@
 #define MOTORBIKE_H
 #include <iostream>
 #include <ctime>
-#include "car.h"
-#include "vehicle.h"
-#include "bus.h"
+#include "Car.h"
+#include "Vehicle.h"
+#include "Bus.h"
 
 
 class Motorbike : public Vehicle {

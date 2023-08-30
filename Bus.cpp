@@ -1,7 +1,7 @@
 #include <iostream>
 #include <ctime>
-#include "vehicle.h"
-#include "bus.h"
+#include "Vehicle.h"
+#include "Bus.h"
 
 using namespace std;
 

@@ -1,8 +1,8 @@
 #include <iostream>
-#include "car.h"
-#include "bus.h"
-#include "motorbike.h"
-#include "vehicle.h"
+#include "Car.h"
+#include "Bus.h"
+#include "Motorbike.h"
+#include "Vehicle.h"
 using namespace std;
 
 int main() {

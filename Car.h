@@ -2,9 +2,9 @@
 #define CAR_H
 #include <iostream>
 #include <ctime>
-#include "motorbike.h"
-#include "vehicle.h"
-#include "bus.h"
+#include "Motorbike.h"
+#include "Vehicle.h"
+#include "Bus.h"
 
 class Car : public Vehicle {
     public:

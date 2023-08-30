@@ -2,9 +2,9 @@
 #define VEHICLE_H
 #include <iostream>
 #include <ctime>
-#include "car.h"
-#include "motorbike.h"
-#include "bus.h"
+#include "Car.h"
+#include "Motorbike.h"
+#include "Bus.h"
 using namespace std;
 
 class Vehicle {
