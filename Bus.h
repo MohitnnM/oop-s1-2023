@@ -8,7 +8,7 @@ class Bus : public Vehicle {
     public:
         Bus();
         Bus(int ID);
-        int getParkingDuration();
+        virtual int getParkingDuration();
 };
 
 #endif
