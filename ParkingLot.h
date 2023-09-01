@@ -13,7 +13,6 @@ class ParkingLot{
         ParkingLot(int capacity);
         int getCount();
         void parkVehicle(Vehicle* vehicle);
-        void unparkVehicle(int ID);
-        int countOverStayingVehicles(time_t maxParkingDuration);     
+        void unparkVehicle(int ID);    
 };
 #endif
