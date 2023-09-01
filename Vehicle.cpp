@@ -12,3 +12,9 @@ Vehicle::Vehicle(int ID): ID(ID){
 int Vehicle::getID(){
     return ID;
 }
+
+int Vehicle::getParkingDuration(){
+    time_t presentTime = time(nullptr);
+    int timeDiff = difftime(presentTime,timeOfEntry);
+    return timeDiff;
+}
