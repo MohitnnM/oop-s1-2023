@@ -4,7 +4,9 @@
 
 ParkingLot::ParkingLot() {}
 
-ParkingLot::ParkingLot(int capacity): maxCapacity(capacity), vehicleCount(0) {}
+ParkingLot::ParkingLot(int capacity): maxCapacity(capacity), vehicleCount(0) {
+    vehicles = new Vehicle*[maxCapacity];
+}
 
 int ParkingLot::getCount(){
     return vehicleCount;

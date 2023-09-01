@@ -6,7 +6,7 @@
 class ParkingLot{
     private:
         int maxCapacity;
-        Vehicle** vehicles = new Vehicle*[maxCapacity];
+        Vehicle** vehicles;
         int vehicleCount;
     public:
         ParkingLot();
