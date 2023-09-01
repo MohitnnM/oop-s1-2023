@@ -9,7 +9,7 @@ Bus::Bus(): Vehicle(0) {};
 
 Bus::Bus(int ID): Vehicle(ID) {}
 
-int Bus::getParkingDuration(){
+int Vehicle::getParkingDuration(){
     time_t presentTime = time(nullptr);
     int timeDiff = difftime(presentTime,timeOfEntry);
     return timeDiff*0.75;
