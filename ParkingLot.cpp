@@ -10,14 +10,16 @@ int ParkingLot::getCount(){
     return vehicleCount;
 }
 
-Vehicle** ParkingLot::parkVehicle(Vehicle* vehicle){
+void ParkingLot::parkVehicle(Vehicle* vehicle){
     if (vehicleCount < maxCapacity){
         vehicles[vehicleCount++] = vehicle;
+    }else {
+        cout << "The lots is full" << endl;
     }
-    return vehicles;
+    
 }
 
-int ParkingLot::unparkVehicle(int ID){
+void ParkingLot::unparkVehicle(int ID){
     int index = -1;
     bool vehicleUnparked;
     for (int i = 0; i < vehicleCount; i++){
@@ -32,9 +34,7 @@ int ParkingLot::unparkVehicle(int ID){
             vehicles[i] = vehicles[i + 1];
         }
         vehicleCount--;
-        vehicleUnparked = true;
     }else {
-        vehicleUnparked = false;
+        cout << "Vehicle not in lot" << endl;
     }
-    return vehicleUnparked;
 }
