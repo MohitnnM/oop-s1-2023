@@ -4,9 +4,7 @@
 
 ParkingLot::ParkingLot() {}
 
-ParkingLot::ParkingLot(int capacity): maxCapacity(capacity), vehicleCount(0) {
-    vehicles = new Vehicle*[maxCapacity];
-}
+ParkingLot::ParkingLot(int capacity): maxCapacity(capacity), vehicleCount(0) {}
 
 int ParkingLot::getCount(){
     return vehicleCount;
@@ -23,6 +21,7 @@ void ParkingLot::parkVehicle(Vehicle* vehicle){
 
 void ParkingLot::unparkVehicle(int ID){
     int index = -1;
+    bool vehicleUnparked;
     for (int i = 0; i < vehicleCount; i++){
         if(vehicles[i]->getID() == ID){
             index = i;
