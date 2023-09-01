@@ -14,7 +14,7 @@ void ParkingLot::parkVehicle(Vehicle* vehicle){
     if (vehicleCount < maxCapacity){
         vehicles[vehicleCount++] = vehicle;
     }else {
-        cout << "The lots is full" << endl;
+        cout << "The lots is full";
     }
     
 }
@@ -35,6 +35,6 @@ void ParkingLot::unparkVehicle(int ID){
         }
         vehicleCount--;
     }else {
-        cout << "Vehicle not in lot" << endl;
+        cout << "Vehicle not in lot";
     }
 }
