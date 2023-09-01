@@ -21,7 +21,6 @@ void ParkingLot::parkVehicle(Vehicle* vehicle){
 
 void ParkingLot::unparkVehicle(int ID){
     int index = -1;
-    bool vehicleUnparked;
     for (int i = 0; i < vehicleCount; i++){
         if(vehicles[i]->getID() == ID){
             index = i;
@@ -38,3 +37,6 @@ void ParkingLot::unparkVehicle(int ID){
         cout << "Vehicle not in the lot";
     }
 }
+
+
+int ParkingLot::countOverStayingVehicles(time_t maxParkingDuration){}
