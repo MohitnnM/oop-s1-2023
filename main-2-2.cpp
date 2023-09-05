@@ -9,6 +9,6 @@ int main(){
     cout << t.getPowerConsumption() << endl;
     cout<< t.get_isOn() << endl;
     cout << t.get_powerRating() << endl;
-    cout << t.getVolume() << endl;
+    cout << t.getScreenSize() << endl;
 
 }

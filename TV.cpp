@@ -20,7 +20,7 @@ double TV::getScreenSize(){
 }
 
 double TV::getPowerConsumption(){
-    int powerConsumption = powerRating * (screenSize/100);
+    int powerConsumption = powerRating * (screenSize/10);
     return powerConsumption;  
 }
 
