@@ -1,8 +1,14 @@
 #include <iostream>
 #include "Appliance.h"
 
+Appliance::Appliance() {
+    powerRating = 0;
+    isOn = false;
+}
 
-Appliance::Appliance(int powerRating){}
+Appliance::Appliance(int powerRating){
+    this->powerRating = powerRating;
+}
 
 
 void Appliance::turnOn(){

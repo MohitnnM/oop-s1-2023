@@ -6,7 +6,10 @@ class Appliance{
         int powerRating;
         bool isOn;
     public:
-        Appliance() {}
+        Appliance() {
+            powerRating = 0;
+            isOn = false;
+        }
         Appliance(int powerRating);        
 
         void turnOn();
