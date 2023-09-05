@@ -7,7 +7,7 @@ class Appliance{
         bool isOn;
     public:
         Appliance() {
-            powerRating = 0;
+            powerRating = 100;
             isOn = false;
         }
         Appliance(int powerRating);        
