@@ -1,7 +1,6 @@
 #include <iostream>
 #include "Appliance.h"
 
-Appliance::Appliance(){}
 
 Appliance::Appliance(int powerRating){}
 
@@ -14,8 +13,8 @@ void Appliance::turnOff(){
     isOn = false;
 }
 
-int Appliance::set_powerRating(int powerRating){
-   this->powerRating;
+void Appliance::set_powerRating(int powerRating){
+   powerRating = this->powerRating;
 }
 
 int Appliance::get_powerRating(){
@@ -26,8 +25,8 @@ bool Appliance::get_isOn(){
     return isOn;
 }
 
-bool Appliance::set_isOn(bool isOn){
-    this-> isOn;
+void Appliance::set_isOn(bool isOn){
+    isOn = this-> isOn;
 }
 
 
