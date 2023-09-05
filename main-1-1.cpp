@@ -5,5 +5,7 @@ using namespace std;
 int main(){
     Appliance a(100);
 
-    cout<<Appliance::getPowerConsumption<<endl;
+    cout<< a.get_powerRating() <<endl;
+    cout<< a.get_isOn() <<endl;
+    cout<< a.getPowerConsumption() <<endl;
 }
