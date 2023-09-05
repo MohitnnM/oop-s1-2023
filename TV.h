@@ -8,8 +8,8 @@ class TV: public Appliance{
     public: 
         TV();
         TV(int powerRating, double screenSize);
-        void setVolume(double screenSize);
-        double getVolume();
+        void setScreenSize(double screenSize);
+        double getScreenSize();
         double getPowerConsumption();
 };
 
