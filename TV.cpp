@@ -11,11 +11,11 @@ TV::TV(int powerRating, double screenSize){
     this->screenSize = screenSize;
 }
 
-void TV::setVolume(double screenSize){
+void TV::setScreenSize(double screenSize){
     this->screenSize = screenSize;
 }
 
-double TV::getVolume(){
+double TV::getScreenSize(){
     return screenSize;
 }
 
