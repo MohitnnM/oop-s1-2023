@@ -4,7 +4,6 @@ using namespace std;
 
 int main(){
     Appliance a(100);
-    a.set_powerRating(100);
 
 
     cout<< a.getPowerConsumption() << endl;
