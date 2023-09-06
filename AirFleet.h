@@ -5,13 +5,10 @@ using namespace std;
 
 class AirFleet{
     private:
-        AirCraft **fleet;      
+        AirCraft** fleet;
+        AirCraft** get_fleet();     
     public:
         AirFleet();
-        AirFleet(int w, int p);
-        int get_numPassengers();
-        void reducePassengers(int x);
-        void fly(int headwind, int minutes);
 
 
 };
