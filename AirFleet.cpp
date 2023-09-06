@@ -6,5 +6,9 @@
 #include "AirCraft.h"
 using namespace std;
 
-AirFleet::AirFleet() {}
+AirFleet::AirFleet(){}
 
+AirCraft** AirFleet::get_fleet(){
+    fleet = new AirCraft*[5];
+    
+}

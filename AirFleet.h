@@ -5,10 +5,10 @@ using namespace std;
 
 class AirFleet{
     private:
-        AirCraft** fleet;
-        AirCraft** get_fleet();     
+        AirCraft** fleet;     
     public:
         AirFleet();
+        AirCraft** get_fleet();
 
 
 };
