@@ -2,22 +2,21 @@
 #include "AirCraft.h"
 using namespace std;
 
-AirCraft::AirCraft(){
-    fuel = 0;
-    numberOfFlights = 0;
-}
+AirCraft::AirCraft(){}
 
 AirCraft::AirCraft(int w){
     this->weight = w;
     this->fuel = fuel;
     this->numberOfFlights = numberOfFlights;
+    fuel = 100;
+    numberOfFlights = 0;
 }
 
 void AirCraft::set_fuel(float fuel){
     this->fuel = fuel;
 }
 
-float AirCraft::get_fuel(){
+int AirCraft::get_fuel(){
     return fuel;
 }
 

@@ -5,13 +5,13 @@
 class AirCraft{
     protected:
         int weight;
-        float fuel;
+        int fuel;
         int numberOfFlights;
     public:
         AirCraft();
         AirCraft(int w);
         void set_fuel(float fuel);
-        float get_fuel();
+        int get_fuel();
         void set_weight(int weight);
         int get_weight();
         void set_numberOfFlights(int numberOfFlights);
