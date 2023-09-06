@@ -7,4 +7,10 @@ int main(){
     cout<< a.get_numberOfFlights() << endl;
     cout<< a.get_fuel() << endl;
     cout<< a.get_weight() << endl;
+
+    a.fly(10,5);
+    a.set_fuel(98.5);
+    cout<< a.get_numberOfFlights() << endl;
+    cout<< a.get_fuel() << endl;
+    cout<< a.get_weight() << endl;
 }

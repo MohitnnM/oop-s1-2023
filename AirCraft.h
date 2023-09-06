@@ -3,17 +3,17 @@
 
 
 class AirCraft{
-    protected:
+    private:
         int weight;
-        int fuel;
-        int numberOfFlights;
+        float fuel = 100;
+        int numberOfFlights = 0;
     public:
         AirCraft();
         AirCraft(int w);
-        void set_fuel(float fuel);
-        int get_fuel();
         void set_weight(int weight);
         int get_weight();
+        void set_fuel(float fuel);
+        float get_fuel();
         void set_numberOfFlights(int numberOfFlights);
         int get_numberOfFlights();
         void refuel();

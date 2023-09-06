@@ -8,16 +8,14 @@ AirCraft::AirCraft(int w){
     this->weight = w;
     this->fuel = fuel;
     this->numberOfFlights = numberOfFlights;
-    fuel = 100;
-    numberOfFlights = 0;
 }
 
 void AirCraft::set_fuel(float fuel){
     this->fuel = fuel;
 }
 
-int AirCraft::get_fuel(){
-    return fuel;
+float AirCraft::get_fuel(){
+    return(fuel);
 }
 
 void AirCraft::set_weight(int weight){
