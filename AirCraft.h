@@ -3,7 +3,7 @@
 
 
 class AirCraft{
-    private:
+    protected:
         int weight;
         float fuel = 100;
         int numberOfFlights = 0;

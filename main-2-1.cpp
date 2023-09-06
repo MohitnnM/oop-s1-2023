@@ -1,7 +1,8 @@
 #include <iostream>
 #include "AirCraft.h"
+#include "Helicopter.h"
 using namespace std;
 
 int main(){
-    AirCraft a(1000);
+    Helicopter h(100, "hi");
 }
