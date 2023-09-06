@@ -2,10 +2,7 @@
 #include "AirCraft.h"
 using namespace std;
 
-AirCraft::AirCraft(){
-    fuel = 100;
-    numberOfFlights = 0;
-}
+AirCraft::AirCraft(){}
 
 AirCraft::AirCraft(int w){
     this->weight = w;
