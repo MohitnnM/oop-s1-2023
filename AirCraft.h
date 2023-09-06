@@ -5,8 +5,8 @@
 class AirCraft{
     protected:
         int weight;
-        float fuel = 100;
-        int numberOfFlights = 0;
+        float fuel;
+        int numberOfFlights;
     public:
         AirCraft();
         AirCraft(int w);
