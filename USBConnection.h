@@ -8,11 +8,28 @@ using namespace std;
 class USBConnection{
     private:
         int ID;
-         
+        USBConnection(int ID){
+            this->ID = ID;
+        }
     public:
         static stack<int> ids;
-        USBConnection(int ID);
-        ~USBConnection();
+        static USBConnection* CreateUsbConnection(){
+            if (!ids.empty()){
+                int newID = ids.top();
+                ids.pop();
+                return new USBConnection(newID);
+            } else{
+                return nullptr;
+            }
+        };
+        int get_id(){
+            return ID;
+        }
+        ~USBConnection(){
+            ids.push(ID);
+        };
 };
+
+stack<int> USBConnection::ids({3,2,1});
 
 #endif
