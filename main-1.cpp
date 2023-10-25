@@ -6,8 +6,9 @@ using namespace std;
 
 int main(){
     Utils util;
-    auto pos1 = util.generateRandomPos(10,10);
-    auto pos2 = util.generateRandomPos(10,10);
+    Cell cell(0,0, 'C');
+    tuple<int,int> pos1 = util.generateRandomPos(10,10);
+    tuple<int,int> pos2 = util.generateRandomPos(10,10);
     double distance = util.calculateDistance(pos1,pos2);
 
     cout<< "X1: " << get<0>(pos1) << " X1: " << get<1>(pos1) << endl;

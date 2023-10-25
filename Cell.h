@@ -8,11 +8,6 @@ class Cell{
         tuple<int,int> position;
         char type;
         public:
-            Cell(){
-                this->position = position;
-                position = make_tuple(0,0);
-                this->type = type;
-            }
             Cell(int x, int y, char type){
                 x = x;
                 y = y;
@@ -25,8 +20,7 @@ class Cell{
                 return type;
             }
             void setPos(int x, int y){
-                get<0>(position) = x;
-                get<1>(position) = y;
+                this->position = make_tuple(x,y);
             }
             void setType(char type){
                 this->type = type;
