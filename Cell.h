@@ -10,6 +10,7 @@ class Cell{
         public:
             Cell(){
                 this->position = position;
+                position = make_tuple(0,0);
                 this->type = type;
             }
             Cell(int x, int y, char type){
