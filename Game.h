@@ -13,9 +13,13 @@ class Game{
         vector<Cell*> grid;
     public:
         Game(){}
-        vector<Cell*>& getGrid(){}
+        vector<Cell*>& getGrid(){
+            return grid;
+        }
         void initGame(int numCharacters, int numTraps, int gridWidth, int gridHeight){
-
+            for (int i = 0; i < numCharacters; i++){
+                
+            }
         }
         void gameLoop(int maxIterations, double trapActivationDistance){
             
