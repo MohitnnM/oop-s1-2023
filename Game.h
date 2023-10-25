@@ -40,11 +40,11 @@ class Game{
                 for (Cell* entity : grid){
                     if (dynamic_cast<Trap*>(entity)){
                         trapActive = false;
-                        break
+                        break;
                     }
 
                     if (trapActive){
-                        cout <<
+                        cout << "Game over" << endl;
                     }
                 }
             }
