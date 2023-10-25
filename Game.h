@@ -17,17 +17,7 @@ class Game{
             return grid;
         }
         void initGame(int numCharacters, int numTraps, int gridWidth, int gridHeight){
-            Utils utils;
-            for (int i = 0; i < numCharacters; i++){
-                auto characterPos = utils.generateRandomPos(gridWidth, gridHeight); 
-                Character* character = new Character[get<0>(characterPos), get<1>(characterPos)];
-                grid.push_back(character);
-            }
-            for (int i = 0; i < numTraps; i++){
-                auto trapPos = utils.generateRandomPos(gridWidth, gridHeight); 
-                Trap* trap = new Trap[get<0>(trapPos), get<1>(trapPos)];
-                grid.push_back(trap);
-            }
+
         }
         void gameLoop(int maxIterations, double trapActivationDistance){
             Trap trap;
