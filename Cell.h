@@ -8,9 +8,12 @@ class Cell{
         tuple<int,int> position;
         char type;
         public:
+            Cell(){
+                this->position = position;
+                position = make_tuple(2,3);
+            }
             Cell(int x, int y, char type){
-                x = x;
-                y = y;
+                this->position = make_tuple(x, y);
                 this->type = type;
             }
             tuple<int,int> getPos(){

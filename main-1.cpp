@@ -14,4 +14,5 @@ int main(){
     cout<< "X1: " << get<0>(pos1) << " X1: " << get<1>(pos1) << endl;
     cout<< "X2: " << get<0>(pos2) << " Y2: " << get<1>(pos2) << endl;
     cout<< distance << endl;
+    cout<< get<0>(cell.getPos()) << " " << get<1>(cell.getPos()) << endl;
 }
