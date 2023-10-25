@@ -20,18 +20,32 @@ class Game{
             Utils utils;
             for (int i = 0; i < numCharacters; i++){
                 auto characterPos = utils.generateRandomPos(gridWidth, gridHeight); 
-                grid.push_back(new Character[get<0>(characterPos), get<1>(characterPos)]);
+                Character* character = new Character[get<0>(characterPos), get<1>(characterPos)];
+                grid.push_back(character);
             }
             for (int i = 0; i < numTraps; i++){
                 auto trapPos = utils.generateRandomPos(gridWidth, gridHeight); 
-                grid.push_back(new Trap[get<0>(trapPos), get<1>(trapPos)]);
+                Trap* trap = new Trap[get<0>(trapPos), get<1>(trapPos)];
+                grid.push_back(trap);
             }
         }
         void gameLoop(int maxIterations, double trapActivationDistance){
+            Trap trap;
             for (int i = 0; i < maxIterations; i++){
                 for (Cell* entity: grid){
                     Character* character = dynamic_cast<Character*>(entity);
                     character->move(1,0);
+                }
+                bool trapActive = trap.isActive();
+                for (Cell* entity : grid){
+                    if (dynamic_cast<Trap*>(entity)){
+                        trapActive = false;
+                        break
+                    }
+
+                    if (trapActive){
+                        cout <<
+                    }
                 }
             }
         }
