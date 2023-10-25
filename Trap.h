@@ -8,6 +8,7 @@ class Trap : public Cell, public Effect{
     private:
         bool active;
     public:
+        Trap(){}
         Trap(int x, int y) : Cell(x, y, 'T'){}
         bool isActive(){
             return active;

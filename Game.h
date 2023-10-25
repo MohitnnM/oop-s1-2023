@@ -17,12 +17,24 @@ class Game{
             return grid;
         }
         void initGame(int numCharacters, int numTraps, int gridWidth, int gridHeight){
+            Utils utils;
+            Character character;
+            Trap trap;
             for (int i = 0; i < numCharacters; i++){
-                
+                auto characterPos = utils.generateRandomPos(gridWidth, gridHeight); 
+                character.setPos(get<0>(characterPos), get<1>(characterPos));
+            }
+            for (int i = 0; i < numTraps; i++){
+                auto trapPos = utils.generateRandomPos(gridWidth, gridHeight); 
+                trap.setPos(get<0>(trapPos), get<1>(trapPos));
             }
         }
         void gameLoop(int maxIterations, double trapActivationDistance){
-            
+            for (int i = 0; i < maxIterations; i++){
+                for (Cell* entity: grid){
+
+                }
+            }
         }
 };
 

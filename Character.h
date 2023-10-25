@@ -4,6 +4,7 @@
 #include "Cell.h"
 class Character: public Cell{
     public:
+        Character(){}
         Character(int x, int y) : Cell(x,y,'C'){}
         void move(int dx, int dy){
             int x, y;
